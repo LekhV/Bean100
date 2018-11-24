@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorConnectEmail">#2ebad1</color>
+    <color name="colorConnectLinkedin">#0077b5</color>
+    <color name="colorConnectFacebook">#3c599b</color>
+
+    <color name="colorButtonSignUp">#bd1e2d</color>
+
+    <color name="colorButtonSignIn">#f05c2a</color>
+    <color name="colorPassRecovery">#2dbcd3</color>
+    <color name="colorResetMyPass">#2ebad1</color>
+    <color name="colorGrayWords">#d5d5d5</color>
+    <color name="colorGrayWordsSet">#6f6f6f</color>
+    <color name="colorRed">#ed2024</color>
+
+    <color name="colorGrayZona">#f3f3f3</color>
+    <color name="colorGrayZona2">#ededed</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorNewNaw">#88eafa</color>
+
+    <color name="colorBlue">#2ebad1</color>
+    <color name="colorBlackText">#2a2a2a</color>
+
+    <color name="colorConfirm">#d5dd25</color>
+    <color name="colorDelete">#f05c2a</color>
+
+    <color name="colorXXConnections">#bd1e2d</color>
+    <color name="colorXXEvents">#f05c2a</color>
+    <color name="colorXXBeans">#d6de23</color>
+    <color name="GRAYBeans">#ebebeb</color>
+</resources>

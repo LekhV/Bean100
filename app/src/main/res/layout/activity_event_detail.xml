@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ActivityEventDetail">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+        <ImageView
+
+            android:id="@+id/imageViewPostEventDetail"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:srcCompat="@drawable/imageevents" />
+
+        <TextView
+            android:id="@+id/textViewNameEventDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewPostEventDetail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="BBQ Party in a good company"
+            android:textColor="@color/colorBlue"
+
+            android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageViewMapGreenDetail"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewNameEventDetail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/green_map" />
+
+        <TextView
+            android:id="@+id/textViewMapDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewMapGreenDetail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="68dp"
+            android:textColor="@color/colorBlackText"
+            android:text="Central Park, NY" />
+
+        <TextView
+            android:id="@+id/textViewDataEventsDetail"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMapDetail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="18 Jun 2019" />
+
+        <TextView
+            android:id="@+id/textViewTimeEventsDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMapDetail"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="10dp"
+            android:text="4:30 PM" />
+
+        <TextView
+            android:id="@+id/textViewParticipantsEventsDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMapDetail"
+
+            android:layout_marginLeft="222dp"
+            android:layout_marginTop="10dp"
+            android:text="12 participants" />
+
+    <TextView
+        android:id="@+id/textViewCommentPostEventsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewParticipantsEventsDetail"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/colorBlackText"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d" />
+
+    </RelativeLayout>

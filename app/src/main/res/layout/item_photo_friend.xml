@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="18dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp">
+
+    <ImageView
+        android:id="@+id/imageViewIconPF"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/one" />
+
+    <TextView
+        android:id="@+id/textViewNamePF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorBlackText"
+        android:textSize="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewDataPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView" />
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       />
+
+    <ImageView
+        android:id="@+id/imageViewPostPF"
+        android:layout_width="wrap_content"
+        android:layout_height="324dp"
+        android:layout_below="@+id/imageViewIconPF"
+
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/photo_friend" />
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp">
+
+        <ImageView
+            android:id="@+id/imageViewLikePF"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/icon_like" />
+
+        <ImageView
+            android:id="@+id/imageViewIconPF1"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imageViewLikePF"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <ImageView
+            android:id="@+id/imageViewPF2"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imageViewLikePF"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <ImageView
+            android:id="@+id/imageViewPF3"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/imageViewLikePF"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <TextView
+            android:id="@+id/textViewNamePFN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewLikePF"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="94dp"
+            android:textColor="@color/colorBlack"
+            android:text="alexandrov" />
+
+        <TextView
+            android:id="@+id/textViewAndPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/imageViewLikePF"
+            android:layout_marginLeft="168dp"
+
+            android:text="and" />
+
+        <TextView
+            android:id="@+id/textViewNumberPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/imageViewLikePF"
+
+            android:layout_marginLeft="196dp"
+            android:textColor="@color/colorBlack"
+            android:text="34" />
+
+        <TextView
+            android:id="@+id/textViewOthersPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/imageViewLikePF"
+
+            android:layout_marginLeft="216dp"
+
+            android:text="others" />
+
+        <TextView
+            android:id="@+id/textViewNumberTextPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/imageViewLikePF"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+
+            android:textColor="@color/colorBlack"
+            android:text="33" />
+
+        <ImageView
+            android:id="@+id/imageViewCommentPF"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/imageViewLikePF"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+
+            app:srcCompat="@drawable/icon_coment" />
+
+        <TextView
+            android:id="@+id/textViewNamePF2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="46dp"
+            android:textColor="@color/colorBlack"
+            android:text="alexandrov"  />
+
+        <TextView
+            android:id="@+id/textViewCommenPF1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="46dp"
+            android:text="Nice Photo" />
+
+        <TextView
+            android:id="@+id/textViewAllComentPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="70dp"
+
+            android:text="View all comments (      )" />
+
+        <TextView
+            android:id="@+id/textViewComentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textViewAllComentPF"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="0dp"
+            android:text="65" />
+
+        <ImageView
+            android:id="@+id/imageViewIconPF2"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:layout_marginTop="96dp"
+
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <EditText
+            android:id="@+id/editTextAddComentPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="112dp"
+            android:layout_marginLeft="49dp"
+            android:background="@null"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:hint="Add a comment..." />
+
+
+
+    </RelativeLayout>
+
+    />
+
+</RelativeLayout>

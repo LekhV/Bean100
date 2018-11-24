@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageViewIconIBDR"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+
+        app:srcCompat="@drawable/one" />
+
+    <TextView
+        android:id="@+id/textViewNameIBDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:textColor="@color/colorBlackText"
+        android:textSize="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewDataIBDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewCommentIBDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d"
+        android:textSize="16dp" />
+
+
+
+</RelativeLayout>

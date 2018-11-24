@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewPostEvent"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/imageevents" />
+
+    <TextView
+        android:id="@+id/textViewNameEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/imageViewPostEvent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="BBQ Party in a good company"
+        android:textColor="@color/colorBlue"
+
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageViewMapGreen"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_below="@+id/textViewNameEvent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/green_map" />
+
+    <TextView
+        android:id="@+id/textViewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewMapGreen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:textColor="@color/colorBlackText"
+        android:text="Central Park, NY" />
+
+    <TextView
+        android:id="@+id/textViewDataEvents"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMap"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="18 Jun 2019"  />
+
+
+    <TextView
+        android:id="@+id/textViewTimeEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMap"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="10dp"
+        android:text="4:30 PM"  />
+
+    <TextView
+        android:id="@+id/textViewParticipantsEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMap"
+
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="10dp"
+        android:text="12 participants" />
+
+</RelativeLayout>

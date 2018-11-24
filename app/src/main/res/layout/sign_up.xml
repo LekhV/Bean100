@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/textViewEmailSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:text="EMAIL"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextEmailSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textViewEmailSU"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:hint="name@domain.com"
+            android:inputType="textEmailAddress"
+            android:textSize="17sp"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/textViewPasswordSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/editTextEmailSU"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:text="PASSWORD"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextPasswordSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textViewPasswordSU"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:hint="Min 8 symbols"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/textViewPasConfirmSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/editTextPasswordSU"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:text="PASSWORD CONFIRMATION"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextViewPasConfirmSU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textViewPasConfirmSU"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:hint="Min 8 symbols"
+            android:inputType="textEmailAddress"
+            android:textSize="17sp"
+            android:imeOptions="actionDone"/>
+
+        <LinearLayout
+            android:id="@+id/linerUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextViewPasConfirmSU"
+            android:layout_marginTop="26dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFirstNameSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:text="FIRST NAME"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextFirstNameSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewLastNameSU"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="name"
+                    android:inputType="text"
+                    android:textSize="16dp"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewLastNameSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textViewFirstNameSU"
+                    android:layout_alignStart="@+id/editTextLastNameSU"
+                    android:layout_alignLeft="@+id/editTextLastNameSU"
+                    android:layout_alignBottom="@+id/textViewFirstNameSU"
+
+                    android:text="LAST NAME"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextLastNameSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignBaseline="@+id/editTextFirstNameSU"
+                    android:layout_alignBottom="@+id/editTextFirstNameSU"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="name"
+                    android:inputType="text"
+                    android:textSize="16dp"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerSUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linerUp"
+            android:layout_marginTop="26dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAgeSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextEmailSU"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="AGE"
+                    android:textSize="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextAgeSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewGenderSU"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="not specified"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16dp"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewGenderSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textViewAgeSU"
+                    android:layout_alignBottom="@+id/textViewAgeSU"
+                    android:layout_toEndOf="@+id/editTextEmailSU"
+                    android:layout_toRightOf="@+id/editTextEmailSU"
+                    android:text="GENDER"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextGenderSU"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewAgeSU"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="not specified"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/linerSUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-80dp"
+            android:background="@drawable/button_sign_up"
+
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</RelativeLayout>

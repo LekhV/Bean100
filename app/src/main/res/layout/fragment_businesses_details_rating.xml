@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textViewAverageRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlue"
+        android:textSize="18dp"
+        android:text="Average Rating  " />
+
+    <TextView
+        android:id="@+id/textViewXXratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textViewratings"
+        android:layout_toLeftOf="@+id/textViewratings"
+        android:text="388" />
+
+    <TextView
+        android:id="@+id/textViewratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="  ratings" />
+
+    <ImageView
+        android:id="@+id/imageViewratings"
+        android:layout_marginTop="10dp"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textViewAverageRating"
+        app:srcCompat="@drawable/star_small" />
+
+    <ProgressBar
+        android:id="@+id/progressBarratings1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewAverageRating"
+        android:layout_toEndOf="@+id/imageViewratings"
+        android:layout_toRightOf="@+id/imageViewratings"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarrating2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/progressBarratings1"
+        android:layout_toEndOf="@+id/imageViewratings"
+        android:layout_toRightOf="@+id/imageViewratings"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarrating3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/progressBarrating2"
+        android:layout_alignEnd="@+id/progressBarrating2"
+        android:layout_alignRight="@+id/progressBarrating2"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarrating4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/progressBarrating3"
+        android:layout_alignEnd="@+id/progressBarratings1"
+        android:layout_alignRight="@+id/progressBarratings1"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarrating5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/progressBarrating4"
+        android:layout_toEndOf="@+id/imageViewratings"
+        android:layout_toRightOf="@+id/imageViewratings"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAverageRating"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="228" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="60" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="23" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="47" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTaptoRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarrating5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:text="Tap to Rate" />
+
+    <RatingBar
+        android:id="@+id/ratingBarTaptoRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarrating5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:outlineAmbientShadowColor="@color/colorXXEvents"
+        android:outlineSpotShadowColor="@color/colorXXEvents"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:isIndicator="false"
+        android:theme="@style/MyRatingBar" />
+
+    <ImageView
+        android:id="@+id/imageViewIconRating"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/ratingBarTaptoRate"
+        android:layout_marginTop="12dp"
+
+        app:srcCompat="@drawable/button_new_naw" />
+
+    <EditText
+        android:id="@+id/editTextAddComentRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBarTaptoRate"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="49dp"
+        android:background="@null"
+        android:inputType="text"
+        android:textSize="14dp"
+        android:hint="Add a comment..." />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageViewIconRating"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="29dp" />
+</RelativeLayout>

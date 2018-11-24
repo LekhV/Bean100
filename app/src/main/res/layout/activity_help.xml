@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ActivityHelp">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewquestionHelp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Do you have a question?"
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:text="Write to us about it on the mail box"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlackText"/>
+
+    <TextView
+        android:id="@+id/textViewEmailHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="140dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlue"
+
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewHelpFAQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewquestionHelp1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="200dp"
+        android:text="FAQ"
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp" />
+
+
+
+    <TextView
+        android:id="@+id/textViewLorem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="240dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed"
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewLorem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d"
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewLorem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="360dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d"
+
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewLorem4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="420dp"
+
+        android:text="Lorem ipsum dolor sit amet, consec-tetur adipisicing elit, sed d"
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

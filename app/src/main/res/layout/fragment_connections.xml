@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/buttonFollowrequests"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+
+        android:background="@null"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textSize="18dp"
+        android:onClick="onClick"
+        android:text="Follow requests" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutConections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonFollowrequests"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Following" />
+
+        <Button
+            android:id="@+id/buttonFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:text="Followers"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentContainerConnections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/linearLayoutConections">
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
+

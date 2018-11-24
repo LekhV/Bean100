@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/imageViewBrandSmoll"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/brand_post" />
+
+    <TextView
+        android:id="@+id/textBusinessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textWorkingHouse"
+        android:layout_alignTop="@+id/imageViewBrandSmoll"
+        android:text="@string/businessName"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="465dp"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:layout_alignLeft="@+id/textWorkingHouse" />
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBusinessName"
+        android:layout_alignStart="@+id/textBusinessName"
+        android:layout_alignLeft="@+id/textBusinessName"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Location"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <TextView
+        android:id="@+id/textWorkingHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewBrandSmoll"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:text="Working Hours"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="530dp" />
+
+    <ImageView
+        android:id="@+id/imageViewBobs"
+        android:layout_width="58dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/imageViewBrandSmoll"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/bob_f"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textViewFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-3dp"
+        android:text="Follow"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

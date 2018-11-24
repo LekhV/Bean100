@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SettingsFragment">
+
+    <Button
+        android:id="@+id/buttonEditProfileInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorGrayWordsSet"
+        android:textSize="18dp"
+        android:text="Edit Profile Information" />
+
+    <Button
+        android:id="@+id/buttonNotificationSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorGrayWordsSet"
+        android:textSize="18dp"
+        android:text="Notification Settings" />
+    <Button
+        android:id="@+id/buttonAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorGrayWordsSet"
+        android:textSize="18dp"
+        android:text="About Us" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorGrayWordsSet"
+        android:textSize="18dp"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/buttonQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorGrayWordsSet"
+        android:textSize="18dp"
+        android:text="QR Code" />
+
+    <Button
+        android:id="@+id/buttonDeleteProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_delete_profile"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+        android:textColor="@color/colorRed"
+        android:textSize="18dp"
+        android:text="Delete Profile" />
+
+</RelativeLayout>

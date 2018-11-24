@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/menuCircleDetailPostBusiness"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-16dp"
+        app:srcCompat="@drawable/icon_circle" />
+
+    <ImageView
+        android:id="@+id/imageViewIconDetailPostBusiness"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+
+        app:srcCompat="@drawable/one" />
+
+
+    <TextView
+        android:id="@+id/textViewNameDetailPostBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:textColor="@color/colorBlackText"
+        android:textSize="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewDataDetailPostBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_sliderDetailPostBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="54dp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/indicatorPDetailPostBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            app:tabBackground="@drawable/indicator_selector"
+            android:layout_below="@+id/vp_sliderDetailPostBusiness"
+            app:tabIndicatorHeight="0dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewPostDetailPostBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textSize="16dp"
+        android:layout_below="@+id/card_view"
+        android:text="In 1964 Beryl Cook and her husband returned to the UK settling"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPostDetailPostBusiness"
+
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewLikeDPB"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/icon_bean_like" />
+
+        <ImageView
+            android:id="@+id/imageViewIconDPB1"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <ImageView
+            android:id="@+id/imageViewDPB2"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-22dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <ImageView
+            android:id="@+id/imageViewDPB3"
+            android:layout_width="36dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-22dp"
+            app:srcCompat="@drawable/button_new_naw" />
+
+        <TextView
+            android:id="@+id/textViewNameDPB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="alexandrov" />
+
+        <TextView
+            android:id="@+id/textViewAndDPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="and" />
+
+        <TextView
+            android:id="@+id/textViewNumberDPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/colorBlack"
+            android:text="34" />
+
+        <TextView
+            android:id="@+id/textViewOthersDPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="4dp"
+            android:text="others" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPostDetailPostBusiness"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/textViewNumberTextDPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="33"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:id="@+id/imageViewCommentDPB"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6dp"
+            app:srcCompat="@drawable/icon_coment" />
+
+
+    </LinearLayout>
+</RelativeLayout>

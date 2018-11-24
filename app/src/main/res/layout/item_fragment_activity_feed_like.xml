@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewLike"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/icon_like" />
+
+    <ImageView
+        android:id="@+id/imageViewIconAF1"
+        android:layout_width="36dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/imageViewLike"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/button_new_naw" />
+
+    <ImageView
+        android:id="@+id/imageViewAF2"
+        android:layout_width="36dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/imageViewLike"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/button_new_naw" />
+
+    <ImageView
+        android:id="@+id/imageViewAF3"
+        android:layout_width="36dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/imageViewLike"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/button_new_naw" />
+
+    <TextView
+        android:id="@+id/textViewNameAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewLike"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="94dp"
+        android:textColor="@color/colorBlack"
+        android:text="alexandrov" />
+
+    <TextView
+        android:id="@+id/textViewAndAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageViewLike"
+        android:layout_marginLeft="168dp"
+
+        android:text="and" />
+
+    <TextView
+        android:id="@+id/textViewNumberAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageViewLike"
+
+        android:layout_marginLeft="196dp"
+        android:textColor="@color/colorBlack"
+        android:text="34" />
+
+    <TextView
+        android:id="@+id/textViewOthersAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/imageViewLike"
+
+        android:layout_marginLeft="216dp"
+
+        android:text="others" />
+
+    <TextView
+        android:id="@+id/textViewNumberTextAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignBottom="@+id/imageViewLike"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+
+        android:textColor="@color/colorBlack"
+        android:text="33" />
+
+    <ImageView
+        android:id="@+id/imageViewCommentAF"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imageViewLike"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        app:srcCompat="@drawable/icon_coment" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ActivityAddPost">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_marginLeft="24dp">
+
+    <EditText
+        android:id="@+id/editTextTypehere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Type here"
+        android:background="@null"
+        android:textColor="@color/colorGrayWordsSet" />
+
+    <Button
+        android:id="@+id/buttonAddAtach"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_add_attach"
+        android:layout_marginTop="146dp"
+        android:paddingTop="36dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:drawableTop="@mipmap/ic_launcher_icon_add_attach"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDelete"
+        android:text="Add attachment" />
+
+    <ImageView
+        android:id="@+id/imageViewBlack"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="146dp"
+        app:srcCompat="@drawable/icon_black" />
+
+    <ImageView
+        android:id="@+id/imageViewCloseWite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonAddAtach"
+        android:layout_alignEnd="@+id/imageViewBlack"
+        app:srcCompat="@mipmap/ic_launcher_icon_close_wite" />
+
+</RelativeLayout>
+</RelativeLayout>

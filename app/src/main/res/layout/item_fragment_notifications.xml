@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/imageViewIconNotifications"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/icon_orange" />
+
+    <TextView
+        android:id="@+id/textViewTextNotifications"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/imageViewIconNotifications"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/textViewtimeNotifications"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="2dp"
+        />
+
+</RelativeLayout>

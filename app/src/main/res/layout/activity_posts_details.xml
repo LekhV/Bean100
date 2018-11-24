@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ActivityPostsDetails">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/menuCircleActivityFeed"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="-16dp"
+            app:srcCompat="@drawable/icon_circle" />
+
+        <ImageView
+            android:id="@+id/imageViewIconPSD"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+
+            app:srcCompat="@drawable/one" />
+
+
+        <TextView
+            android:id="@+id/textViewNamePSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="66dp"
+            android:textColor="@color/colorBlackText"
+            android:textSize="17dp"
+            android:text="TextView" />
+
+
+        <TextView
+            android:id="@+id/textViewDataPSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView" />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_viewPD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:layout_marginTop="54dp" />
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                app:tabBackground="@drawable/indicator_selector"
+                android:layout_below="@+id/viewPager"
+                app:tabIndicatorHeight="0dp" />
+
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/textViewPostPSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="16dp"
+            android:layout_below="@+id/card_viewPD"
+            android:text="In 1964 Beryl Cook and her husband returned to the UK settling"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutPSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPostPSD"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewLikePSD"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/icon_bean_like" />
+
+            <ImageView
+                android:id="@+id/imageView1PSD"
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/button_new_naw" />
+
+            <ImageView
+                android:id="@+id/imageViewIcon2PSD"
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-22dp"
+                app:srcCompat="@drawable/button_new_naw" />
+
+
+            <ImageView
+                android:id="@+id/imageViewIcon3PSD"
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-22dp"
+                app:srcCompat="@drawable/button_new_naw" />
+
+            <TextView
+                android:id="@+id/textViewName3PSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="alexandrov" />
+
+            <TextView
+                android:id="@+id/textViewAndPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="and" />
+
+            <TextView
+                android:id="@+id/textViewNumberPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/colorBlack"
+                android:text="34" />
+
+            <TextView
+                android:id="@+id/textViewOthersPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="4dp"
+                android:text="others" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPostPSD"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/textViewNumberTextPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="33"
+                android:textColor="@color/colorBlack" />
+
+
+            <ImageView
+                android:id="@+id/imageViewCommentPSD"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="6dp"
+                app:srcCompat="@drawable/icon_coment" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewNamePSD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LinearLayoutPSD"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                android:text="alexandrov"  />
+
+        <TextView
+            android:id="@+id/textViewCommenPSD1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayoutPSD"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="12dp"
+            android:text="Nice Photo" />
+
+            <TextView
+                android:id="@+id/textViewAllComentPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNamePSD2"
+                android:layout_marginTop="12dp"
+
+                android:text="View all comments (      )" />
+
+            <TextView
+                android:id="@+id/textViewComentNumberPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNamePSD2"
+                android:layout_marginLeft="131dp"
+                android:layout_marginTop="12dp"
+                android:text="65" />
+
+
+            <ImageView
+                android:id="@+id/imageViewIconPSD2"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/textViewAllComentPSD"
+                android:layout_marginTop="12dp"
+
+                app:srcCompat="@drawable/button_new_naw" />
+
+            <EditText
+                android:id="@+id/editTextAddComentPSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAllComentPSD"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="49dp"
+                android:background="@null"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:hint="Add a comment..." />
+
+
+    </RelativeLayout>
+</RelativeLayout>

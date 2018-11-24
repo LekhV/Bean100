@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ConnectionPlus">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonScanCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background = "@null"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+
+        android:textSize="18dp"
+        android:text="Scan QR Code" />
+
+    <Button
+        android:id="@+id/buttonEnterCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background = "@null"
+        android:layout_below="@+id/buttonScanCode"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_icon"
+        android:visibility="visible"
+        android:paddingLeft="20dp"
+
+        android:textColor="@color/colorBlackText"
+        android:textSize="18dp"
+        android:text="Enter Code" />
+
+    <Button
+        android:id="@+id/buttonEnterCode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background = "@null"
+        android:layout_below="@+id/buttonScanCode"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/ic_launcher_bac_iconq2"
+        android:visibility="invisible"
+        android:paddingLeft="20dp"
+
+        android:textSize="18dp"
+        android:text="Enter Code" />
+
+    <EditText
+        android:id="@+id/editTextEnterCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/item_enter"
+
+        android:textSize="18dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="240dp"
+
+        android:textSize="18dp"
+        android:textColor="@color/colorBlackText"
+        android:text="Invite from Contacts" />
+
+
+
+</RelativeLayout>

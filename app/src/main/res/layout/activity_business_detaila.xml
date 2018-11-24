@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="14dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="350dp"
+            android:layout_height="175dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="41dp"
+            app:srcCompat="@drawable/brand" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="14dp">
+
+        <Button
+            android:id="@+id/buttonPostsB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+
+            android:text="Posts"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/buttonInfoB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:textColor="@android:color/darker_gray"
+            android:text="Info"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/buttonOffersB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Offers"
+            android:onClick="onClick"
+            android:clickable="false"/>
+        <Button
+            android:id="@+id/buttonRatingB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:text="Rating"
+            android:textColor="@android:color/darker_gray"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/linearLayoutBusiness">
+
+    </FrameLayout>
+</RelativeLayout>

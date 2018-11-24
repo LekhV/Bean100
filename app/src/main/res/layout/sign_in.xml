@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+
+    <ImageView
+        android:id="@+id/imageSignIn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewEmailIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageSignIn"
+        android:layout_marginTop="42dp"
+        android:text="EMAIL"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewEmailIn"
+
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:inputType="textEmailAddress"
+        android:hint="name@domain.com"
+        android:textSize="17sp"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/textViewPasswordIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:layout_alignLeft="@+id/textViewEmailIn"
+        android:layout_alignStart="@+id/textViewEmailIn"
+        android:layout_below="@+id/editTextEmailIn"
+        android:textSize="17sp"
+        android:text="PASSWORD" />
+
+    <EditText
+        android:id="@+id/editTextPasswordIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewPasswordIn"
+
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:inputType="text"
+        android:textSize="17sp"
+        android:hint="Min 8 symbols"
+        android:imeOptions="actionDone"/>
+
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/textBtnViewPassRec"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_sign_in"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textBtnViewPassRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPassRecovery"
+        android:text="@string/btn_pass_rec" />
+</RelativeLayout>
+</RelativeLayout>

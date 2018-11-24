@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+<ImageView
+    android:id="@+id/imageViewIconMessenger"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    app:srcCompat="@drawable/one" />
+
+
+    <TextView
+        android:id="@+id/textViewNameMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imageViewIconMessenger"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewtextMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        android:layout_toEndOf="@+id/imageViewIconMessenger"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewtimeMessenger"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="2dp" />
+
+    <ImageView
+        android:id="@+id/imageViewSmallBean"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imageViewIconMessenger"
+        app:srcCompat="@drawable/bean_small" />
+
+</RelativeLayout>

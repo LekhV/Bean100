@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/imageViewIconFR"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/button_new_naw" />
+
+
+    <TextView
+        android:id="@+id/textViewIconNameFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewIconEmailFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewIconFR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonConfirmFR"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_confirm"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/buttonDeleteFR"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/buttonConfirmFR"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/button_delete"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="Delete" />
+</RelativeLayout>

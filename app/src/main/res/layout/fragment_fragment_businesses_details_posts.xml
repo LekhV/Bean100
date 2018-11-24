@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/buttonBusinessNewPost"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            android:onClick="onClick"
+            android:background="@drawable/brand_post" />
+
+        <TextView
+            android:id="@+id/textViewBusinessNewPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="16dp"
+            android:text="New Post" />
+
+        <Button
+            android:id="@+id/buttonBusinessAddStory"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/add_business"
+            android:text="+"
+            android:onClick="onClick"
+            android:textColor="@color/colorGrayWords"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textBusinessAddStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="16dp"
+            android:text="Add Story" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/rvBusinessDetailsPosts"
+        android:layout_below="@id/linearLayoutB"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonNewBusiness"
+                    android:layout_width="340dp"
+                    android:layout_height="172dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:paddingTop="64dp"
+                    android:background="@drawable/new_business2"
+                    android:drawableTop="@mipmap/ic_launcher_new_businessb"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:text="TITLE"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/editTextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewLastName"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="title"
+                    android:inputType="text"
+                    android:textSize="18dp"
+                    android:imeOptions="actionDone"/>
+
+                <TextView
+                    android:id="@+id/textViewLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewTitle"
+                    android:layout_alignStart="@+id/textViewTitle"
+
+                    android:layout_alignLeft="@+id/textViewTitle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginTop="30dp"
+                    android:text="LOCATION"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/editTextLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/textViewLastName"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:hint="location"
+                    android:inputType="text"
+                    android:textSize="18dp"
+                    android:imeOptions="actionDone"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+                            android:text="DAYS"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textViewDaysSunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Sunday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysMonday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Monday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysTuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Tuesday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysWednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Wednesday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysThursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Thursday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysFriday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Friday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                        <TextView
+                            android:id="@+id/textViewDaysSaturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Saturday"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"  />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TIME"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/textEditFrom1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditFrom2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+
+                            android:background="@null"
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+                            android:id="@+id/textEditFrom3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditFrom4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditFrom5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditFrom6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditFrom7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+
+                            android:hint="from"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            android:imeOptions="actionDone"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/textEditto1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+
+                            android:layout_marginTop="39dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone" />
+
+                        <EditText
+
+                            android:id="@+id/textEditto2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+                            android:id="@+id/textEditto3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditto4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditto5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+                        <EditText
+
+                            android:id="@+id/textEditto6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+
+                        <EditText
+
+                            android:id="@+id/textEditto7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="20dp"
+                            android:background="@null"
+                            android:textSize="18dp"
+                            android:hint="to"
+                            android:inputType="text"
+                            android:imeOptions="actionDone"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewTellEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="true"
+                    android:text="Event Overview and description"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/textEdittoTellEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/item_enter"
+                    android:gravity="clip_horizontal"
+                    android:hint="Tell people more about your event"
+                    android:imeOptions="actionDone"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
